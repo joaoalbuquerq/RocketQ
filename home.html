@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial scale">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/xhome.css">
 
         <!-- FONTES -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,45 +18,48 @@
     </head>
 
     <body>
-        <header>
-            <img src="assets/logo.svg" alt="Rocket.Q logo">
-        </header>
 
-        <main>
-            <div class="container">
-
-                <!-- ENTRAR NA SALA -->
-                <section>
-                    <h2>Entre como participante</h2>
-                    <form action="">
-                        <label class="sr-only" for="room-id">Código da sala</label>
-                        <input type="number" id="room-id" placeholder="Código da sala">
-                        <button>
-                            <img src="assets/enter-room.svg" alt="Entrar na sala">
-                            Entrar na sala
-                        </button>
-                    </form>
-                </section>
-
-                <!-- SEPARADOR -->
-
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
+        <div id="home" class="content">
+            <header>
+                <img src="assets/logo.svg" alt="Rocket.Q logo">
+            </header>
+    
+            <main>
+                <div class="container">
+    
+                    <!-- ENTRAR NA SALA -->
+                    <section>
+                        <h2>Entre como participante</h2>
+                        <form action="">
+                            <label class="sr-only" for="room-id">Código da sala</label>
+                            <input type="number" id="room-id" placeholder="Código da sala">
+                            <button>
+                                <img src="assets/enter-room.svg" alt="Entrar na sala">
+                                Entrar na sala
+                            </button>
+                        </form>
+                    </section>
+    
+                    <!-- SEPARADOR -->
+    
+                    <div class="separator">
+                        <div></div>
+                        <div>ou</div>
+                        <div></div>
+                    </div>
+    
+                    <!-- CRIAR UMA SALA -->
+    
+                    <section>
+                        <h2>Crie sua própria sala de form fácil</h2>
+                        <a href="/create-room">
+                            <img src="assets/users.svg" alt="Criar sala">
+                            Criar sala
+                        </a>
+                    </section>
+    
                 </div>
-
-                <!-- CRIAR UMA SALA -->
-
-                <section>
-                    <h2>Crie sua própria sala de form fácil</h2>
-                    <a href="/create-room">
-                        <img src="assets/users.svg" alt="Criar sala">
-                        Criar sala
-                    </a>
-                </section>
-
-            </div>
-        </main>
+            </main>
+        </div>
     </body>
 </html>
