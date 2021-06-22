@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+   
+    /* CORES GERAIS */
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    /* CORES HOVER */
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+
+    font-size: 62.5%; /*10px*/
+}
+
+body{
+    height: 100vh;
+    background: var(--background);
+}
+
+body,button,input,textarea{
+    font-size: clamp(14px,1.6rem,2vw);
+
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
