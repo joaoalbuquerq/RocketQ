@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 11.4rem 1fr;
+
     grid-template-areas: 
     'header header'
     'left right'
@@ -13,32 +14,36 @@ header{
 
 #bg{
     grid-area: left;
+
     background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+    background-position-x: -10rem;
 }
 
 main{
     grid-area: right;
+
+    display: flex;
+    align-items: center;
+    margin-top: -12rem;
 }
 
-main .container{
-    width: min(36.3rem,100%);
+main .container{    
+    width: min(36.3rem, 100%);
 }
 
 main h2{
     font-family: 'Poppins', sans-serif;
     color: var(--black);
-    font-size:  clamp(20px,5vw,2.8rem);
-    margin-bottom:2.4rem; /*Função que calcula o tamanho padrão = (1 minimo, 2 padrão, 3 máximo)*/
-    font-weight: bold;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
 }
 
 input{
-    border: solid .2rem var(--grey-blue);
+    border: .2rem solid var(--grey-blue);
     padding: 0 1.6rem;
 }
 
-input,button,.button{
+input, button, .button{
     width: 100%;
     margin-bottom: 1.8rem;
-    
 }
