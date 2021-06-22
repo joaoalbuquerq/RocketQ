@@ -81,6 +81,8 @@ button, .button{
 
 button:hover, .button:hover{
     filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 button > img
