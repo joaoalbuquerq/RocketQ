@@ -37,3 +37,20 @@ body,button,input,textarea{
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
 }
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
