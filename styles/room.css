@@ -57,6 +57,8 @@
     border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
     border-radius: .8rem;
+
+    margin-bottom: 1.6rem;
 }
 
 #question-form form textarea{
@@ -95,3 +97,6 @@ question-form form textarea::placeholder{
     line-height: 2.4rem;
     padding: .8rem 2.4rem;
 }
+
+/* QUESTION ACTION */
+
