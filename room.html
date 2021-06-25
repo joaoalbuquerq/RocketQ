@@ -11,6 +11,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/room.css">
+        <link rel="stylesheet" href="styles/modal.css">
 
         <!-- FONTES -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -145,6 +146,23 @@
 
                 </section>
             </main>
+        </div>
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que você deseja excluir esta pergunta ?</p>
+
+                <form action="#">
+                    <label class="sr-only" for-id="password">Digite a sua senha de administrador</label>
+                    <input type="password" id="password" name="password" placeholder="Digite a sua senha">
+
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
