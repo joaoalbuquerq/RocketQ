@@ -1,7 +1,7 @@
 {
   "name": "RocketQ",
   "version": "1.0.0",
-  "description": "",
+  "description": "projeto desenvolvido para gerenciar perguntas anonimas de usuários direcionados ao dono da página. Projeto desenvolvido na semana NLW rocketseat na missão discover",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,14 @@
     "url": "git+https://github.com/jotapedr0/RocketQ.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pedro Albuquerque",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jotapedr0/RocketQ/issues"
   },
-  "homepage": "https://github.com/jotapedr0/RocketQ#readme"
+  "homepage": "https://github.com/jotapedr0/RocketQ#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }
