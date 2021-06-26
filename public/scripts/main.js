@@ -34,7 +34,7 @@ function handleClick(event,check=true){
     const questionId = event.target.dataset.id
 
     const form = document.querySelector('.modal form')
-    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
 
 
     // Função que troca o conteúdo do modal de acordo com o botão clicado, e por final abre o modal
