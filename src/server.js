@@ -12,6 +12,8 @@ server.use(express.static("public")) //Indicando que arquivos estáticos como es
 //faz uma juntção do caminho do projeto com o dirname(que é src por causa do join)
 server.set('views', path.join(__dirname, 'views'))
 
+server.use(express.urlencoded({extended: true})) //Middleware
+
 server.use(route) //Setando que o express irá usar o arquivo de rotas
 
 server.listen(3000, () => console.log('rodando'))
