@@ -1,12 +1,10 @@
-/* DIMENSÃO DE TODO O CONTEÚDO */
 .content{
-    width: min(112rem, 90%);
+    max-width: min(112rem, 90%);
 }
-
-/* MENU */
 
 #room header{
     width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,39 +34,35 @@
     height: 2rem;
 }
 
-#room header .buttons .button:nth-child(2):hover, button:hover{
-    transition: .5s;
-    background: #8F50E5;
-    color: var(--white);
-}
-
-/* PERGUNTAS */
-
+/*** QUESTION FORM ***/
 #question-form h2{
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.8rem;
     color: var(--black);
     font-weight: 700;
-    margin-bottom: 2.3rem;
     line-height: 4.2rem;
+
+    margin-bottom: 2.4rem;
 }
 
 #question-form form{
     border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
-    border-radius: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
 
     margin-bottom: 1.6rem;
 }
 
 #question-form form textarea{
     resize: none;
-    background: none;
-    outline: none;
+    background: transparent;
+
     width: 100%;
+
+    outline: none;
 }
 
-question-form form textarea::placeholder{
+#question-form form textarea::placeholder{
     color: var(--grey-blue);
 }
 
@@ -83,7 +77,7 @@ question-form form textarea::placeholder{
     align-items: center;
 
     color: var(--icons-details);
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -94,16 +88,16 @@ question-form form textarea::placeholder{
 
 #question-form form footer button{
     height: auto;
-    line-height: 2.4rem;
     padding: .8rem 2.4rem;
+    line-height: 2.4rem
 }
 
-/* QUESTION ACTION */
 
+/******* Questions *****/
 .question-wrapper{
     background: var(--light-blue);
     margin-bottom: .8rem;
-    border-radius: .8rem;
+    border-radius: 0 .8rem .8rem .8rem ;
     padding: 2.4rem;
 }
 
@@ -120,7 +114,7 @@ question-form form textarea::placeholder{
 
 .question-wrapper .question-content p{
     margin-left: 1.6rem;
-    word-break: break-word;  
+    word-break: break-word;
     display: flex;
     align-items: center;
     min-height: 5.5rem;
@@ -141,20 +135,38 @@ question-form form textarea::placeholder{
     margin-right: .8rem;
 }
 
-.question-wrapper .actions > a{
-    margin-left: 2.4rem;
-}
-
 .question-wrapper .actions > a + a{
     margin-left: 2.4rem;
 }
 
-
-/* QUESTION READ */
+/***** Question Read ****/
 .question-wrapper.read{
-    background: var(--grey-medium); 
+    background: var(--grey-medium);
 }
 
 .question-wrapper.read .question-content .user{
     background: var(--grey-blue);
+}
+
+
+/*** No Questions   **/
+.no-questions{
+    text-align: center;
+    margin-top: 5.2rem;
+}
+.no-questions img{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
+.no-questions p{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.no-questions p + p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;   
+    margin-top: 1.3rem;
+    line-height: 1.9rem;
 }

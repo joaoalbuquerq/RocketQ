@@ -57,14 +57,14 @@ body, button, input, textarea{
 }
 
 
-/*--------- input and buttons ---------*/
+/*--------- input and buttons*/
 input, button, .button{
     border-radius: .8rem;
     height: 5rem;
 }
 
 button, .button{
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins';
     font-weight: 500;
     line-height: 0;
 
@@ -109,7 +109,10 @@ button.grey,
     color: var(--grey-dark);
 }
 
-/* --------- header --------- */
+
+
+/*** HEADER ****/
+
 .content header{
     width: 80%;  
     margin: 3.5rem auto;
